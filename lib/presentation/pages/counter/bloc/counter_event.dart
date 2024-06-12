@@ -5,8 +5,8 @@ sealed class CounterEvent {}
 
 final class FetchCounterEvent extends CounterEvent {}
 
-final class SaveCounterEvent extends CounterEvent {
+final class SaveCounterValueEvent extends CounterEvent {
   final int counter;
 
-  SaveCounterEvent(this.counter);
+  SaveCounterValueEvent(this.counter);
 }
